@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Om Dies And Tools</title>
+</head>
+<body>
+  <header class="bg-gray-900 text-white shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-5">
+      
+      <!-- Logo Section -->
+      <a class="flex items-center text-white" href="#">
+        <img src="assets/images/logo.png" alt="Om Dies And Tools Logo" class="w-14 h-14 rounded-full border border-gray-400 shadow-md" />
+        <span class="ml-3 text-2xl font-semibold tracking-wide">Om Dies And Tools</span>
+      </a>
+  
+      <!-- Hamburger Button (Mobile) -->
+      <button id="hamburger" class="lg:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-white" viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+  
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-8 font-bold">
+        <a class="relative text-gray-300 hover:text-red-500 transition duration-300" href="index.html">Home</a>
+        <a class="relative text-gray-300 hover:text-red-500 transition duration-300" href="product.html">Products</a>
+        <a class="relative text-gray-300 hover:text-red-500 transition duration-300" href="contact.html">Contact</a>
+        <a class="relative text-gray-300 hover:text-red-500 transition duration-300" href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <nav id="mobileNav" class="hidden flex flex-col items-center bg-gray-900 text-white w-full absolute left-0 top-20 py-4 space-y-4 shadow-md lg:hidden font-bold">
+    <a class="hover:text-red-500 py-2 transition duration-300" href="index.html">Home</a>
+    <a class="hover:text-red-500 py-2 transition duration-300" href="product.html">Products</a>
+    <a class="hover:text-red-500 py-2 transition duration-300" href="contact.html">Contact</a>
+    <a class="hover:text-red-500 py-2 transition duration-300" href="#about">About</a>
+  </nav>
+  
+
+  <!-- Hero Section -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-red-600 mb-6">Empowering Industries with
+          <br class="hidden lg:inline-block">Precision & Innovation
+        </h1>
+        <p class="mb-8 leading-relaxed">From high-precision dies to durable industrial tools, we engineer excellence. Get custom-made solutions tailored to your business needs with unmatched quality and efficiency.
+        </p>
+
+        <div class="flex justify-center">
+          <button class="inline-flex text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg">Get Quote</button>
+          <a href="tel:9351314532">
+            <button class="ml-4 inline-flex items-center text-red-600 bg-white border border-red-600 py-2 px-6 focus:outline-none hover:bg-red-50 rounded text-lg">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.6 10.2c1.4 2.8 3.6 5 6.4 6.4l2.1-2.1c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1v3.5c0 .6-.4 1-1 1C12.4 20.3 4.7 12.6 4.7 3.1c0-.6.4-1 1-1H9c.6 0 1 .4 1 1 .1 1.3.3 2.6.6 3.8.1.4 0 .8-.3 1.1l-2 2.2z"/>
+                </svg>
+                Call Us
+            </button>
+        </a>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="hero" src="assets/images/logo.png">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="text-gray-600 body-font" id="about">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-6">
+          About Our Journey & Expertise
+      </h2>
+      <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          We follow a structured process to ensure precision, quality, and timely delivery. Here's how we work:
+      </p>
+      </div>
+      <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Authentic Cliche Forage</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Kinfolk Chips Snackwave</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Coloring Book Ethical</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Typewriter Polaroid Cray</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Pack Truffaut Blue</span>
+          </div>
+        </div>
+        <div class="p-2 sm:w-1/2 w-full">
+          <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">The Catcher In The Rye</span>
+          </div>
+        </div>
+      </div>
+      <button class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">More</button>
+    </div>
+  </section>
+
+  <!-- About Us galiley -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-6">
+          Our Work in Action
+      </h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/3 sm:w-1/2 p-4">
+          <div class="flex relative">
+            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366">
+            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+              <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+              <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+              <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Our Process / How We Work Section -->
+<section class="bg-white py-16">
+  <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-6">
+          Our Process - Step by Step
+      </h2>
+      <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          We follow a structured process to ensure precision, quality, and timely delivery. Here's how we work:
+      </p>
+
+      <div class="relative">
+          <!-- Vertical Line -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-red-500 hidden md:block"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+              <!-- Step 1: Consultation -->
+              <div class="flex items-center md:justify-end">
+                  <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center max-w-md">
+                      <div class="text-red-500 text-5xl mb-4">🏭</div>
+                      <h3 class="text-lg font-semibold text-red-600 mb-2">Consultation</h3>
+                      <p class="text-gray-700">
+                          Understanding client needs and offering expert guidance for the best solutions.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Connector -->
+              <div class="hidden md:flex justify-center items-center">
+                  <div class="w-8 h-8 bg-red-500 text-white flex items-center justify-center rounded-full font-bold">1</div>
+              </div>
+
+              <!-- Step 2: Design & Prototyping -->
+              <div class="flex items-center md:justify-start">
+                  <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center max-w-md">
+                      <div class="text-red-500 text-5xl mb-4">🛠</div>
+                      <h3 class="text-lg font-semibold text-red-600 mb-2">Design & Prototyping</h3>
+                      <p class="text-gray-700">
+                          Creating precise designs and prototypes to ensure a perfect fit.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Connector -->
+              <div class="hidden md:flex justify-center items-center">
+                  <div class="w-8 h-8 bg-red-500 text-white flex items-center justify-center rounded-full font-bold">2</div>
+              </div>
+
+              <!-- Step 3: Manufacturing -->
+              <div class="flex items-center md:justify-end">
+                  <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center max-w-md">
+                      <div class="text-red-500 text-5xl mb-4">⚙</div>
+                      <h3 class="text-lg font-semibold text-red-600 mb-2">Manufacturing</h3>
+                      <p class="text-gray-700">
+                          High-quality production using advanced machinery and best materials.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Connector -->
+              <div class="hidden md:flex justify-center items-center">
+                  <div class="w-8 h-8 bg-red-500 text-white flex items-center justify-center rounded-full font-bold">3</div>
+              </div>
+
+              <!-- Step 4: Delivery -->
+              <div class="flex items-center md:justify-start">
+                  <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center max-w-md">
+                      <div class="text-red-500 text-5xl mb-4">🚚</div>
+                      <h3 class="text-lg font-semibold text-red-600 mb-2">Delivery & Support</h3>
+                      <p class="text-gray-700">
+                          On-time delivery with continuous support for customer satisfaction.
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Connector -->
+              <div class="hidden md:flex justify-center items-center">
+                <div class="w-8 h-8 bg-red-500 text-white flex items-center justify-center rounded-full font-bold">4</div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+
+
+  
+  <!-- Why Choose Us Section -->
+<section class="bg-white py-16">
+  <div class="container mx-auto text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-red-600 mb-6">
+          Why Choose Us?
+      </h2>
+      <p class="text-gray-700 mb-12 max-w-2xl mx-auto">
+          Our commitment to quality, precision, and customer satisfaction makes us the best choice for your needs.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Benefit 1: High Precision Technology -->
+          <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center">
+              <div class="text-red-500 text-5xl mb-4">⚙</div>
+              <h3 class="text-lg font-semibold text-red-600 mb-2">High Precision Technology</h3>
+              <p class="text-gray-700">
+                  We use advanced machinery and expert craftsmanship for accurate results.
+              </p>
+          </div>
+
+          <!-- Benefit 2: 100+ Happy Clients -->
+          <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center">
+              <div class="text-red-500 text-5xl mb-4">😊</div>
+              <h3 class="text-lg font-semibold text-red-600 mb-2">100+ Happy Clients</h3>
+              <p class="text-gray-700">
+                  Trusted by numerous businesses for our top-notch products and services.
+              </p>
+          </div>
+
+          <!-- Benefit 3: 10+ Years of Experience -->
+          <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center">
+              <div class="text-red-500 text-5xl mb-4">📅</div>
+              <h3 class="text-lg font-semibold text-red-600 mb-2">10+ Years of Experience</h3>
+              <p class="text-gray-700">
+                  A decade of expertise in manufacturing premium quality dies and tools.
+              </p>
+          </div>
+
+          <!-- Benefit 4: Affordable & Reliable -->
+          <div class="bg-red-100 p-6 rounded-lg shadow-lg text-center">
+              <div class="text-red-500 text-5xl mb-4">💰</div>
+              <h3 class="text-lg font-semibold text-red-600 mb-2">Affordable & Reliable</h3>
+              <p class="text-gray-700">
+                  We offer cost-effective and dependable solutions tailored to your needs.
+              </p>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+<footer class="text-gray-600 bg-gray-900 text-white relative body-font before:absolute before:-top-2 before:left-0 before:w-full before:h-2 before:bg-black before:opacity-10 before:shadow-md">
+  <div class="container px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    
+<!-- Logo + About -->
+<div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+  <a class="flex title-font font-medium items-center text-white" href="#">
+    <img src="assets/images/logo.png" alt="Om Dies And Tools Logo" class="w-16 h-16 rounded-full border border-gray-400 shadow-md" />
+    <span class="ml-3 text-xl font-bold">Om Dies And Tools</span>
+  </a>  
+  <p class="mt-2 text-sm text-gray-400">Quality tools with precision and durability.</p>
+
+  <!-- Location -->
+  <div class="flex items-center justify-center md:justify-start mt-4 text-gray-300">
+    <svg class="w-5 h-5 text-gray-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </svg>
+    <span>Jaipur, Rajasthan</span>
+  </div>
+
+  <!-- GST Number -->
+  <div class="flex items-center justify-center md:justify-start mt-2 text-gray-300">
+    <svg class="w-5 h-5 text-gray-400 mr-2" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm14-4h4v6h-4v-6zm0-4h4v2h-4v-2zm0-8h4v6h-4V3z"/>
+    </svg>
+    <span>GST No. : 08FSJPS3510K1ZC</span>
+  </div>
+</div>
+
+    <!-- Quick Links -->
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">Short Links</h2>
+        <nav class="list-none mb-10 space-y-2">
+          <li><a class="text-gray-400 hover:text-red-500 transition" href="index.html">Home</a></li>
+            <li><a class="text-gray-400 hover:text-red-500 transition" href="product.html">Products</a></li>
+            <li><a class="text-gray-400 hover:text-red-500 transition" href="contact.html">Contact</a></li>
+            <li><a class="text-gray-400 hover:text-red-500 transition" href="#about">About</a></li>
+
+        </nav>
+      </div>
+
+      <!-- Product Categories -->
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-semibold text-white tracking-widest text-sm mb-3">Our Products</h2>
+        <nav class="list-none mb-10 space-y-2">
+          <li><a class="text-gray-400 hover:text-red-500 transition">First Link</a></li>
+          <li><a class="text-gray-400 hover:text-red-500 transition">Second Link</a></li>
+          <li><a class="text-gray-400 hover:text-red-500 transition">Third Link</a></li>
+          <li><a class="text-gray-400 hover:text-red-500 transition">Fourth Link</a></li>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="bg-gray-800">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row items-center">
+      <p class="text-gray-400 text-sm text-center sm:text-left">© 2025 Om Dies And Tools</p>
+
+      <!-- Social Icons -->
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-400 hover:text-red-500 transition">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
+        </a>
+        <a class="ml-3 text-gray-400 hover:text-red-500 transition">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg>
+        </a>
+        <a class="ml-3 text-gray-400 hover:text-red-500 transition">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></svg>
+        </a>
+        <a class="ml-3 text-gray-400 hover:text-red-500 transition">
+          <svg fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+  
+  <script>
+    // Mobile Menu Toggle Script
+    const hamburger = document.getElementById("hamburger");
+    const mobileNav = document.getElementById("mobileNav");
+  
+    hamburger.addEventListener("click", () => {
+      mobileNav.classList.toggle("hidden");
+    });
+
+
+  </script>
+</body>
+</html>
